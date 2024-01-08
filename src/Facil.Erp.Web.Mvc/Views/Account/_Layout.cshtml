@@ -28,7 +28,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="/"><b>Erp</b></a>
+            <a href="/"><b>Fácil ERP</b></a>
         </div>
         <div class="card">
             @if (MultiTenancyConfig.IsEnabled)
@@ -40,13 +40,13 @@
             <div class="card-body login-card-body">
                 @RenderBody()
             </div>
-            <div class="card-footer">
+           @*  <div class="card-footer">
                 <vc:account-languages></vc:account-languages>
-            </div>
+            </div> *@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <small>&copy; @DateTime.Now.Year Erp. <b>Version </b> @AppVersionHelper.Version [@AppVersionHelper.ReleaseDate.ToString("yyyyMMdd")]</small>
+                <small>&copy; 2022 @DateTime.Now.Year Erp. <b>Versão </b> @AppVersionHelper.Version [@AppVersionHelper.ReleaseDate.ToString("dd/MM/yyyy")]</small>
             </div>
         </div>
     </div>

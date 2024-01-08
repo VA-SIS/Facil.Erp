@@ -15,6 +15,22 @@
     <EmbeddedResource Include="Localization\SourceFiles\*.xml" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Remove="Localization\SourceFiles\Erp-fa.xml" />
+    <EmbeddedResource Remove="Localization\SourceFiles\Erp-fr.xml" />
+    <EmbeddedResource Remove="Localization\SourceFiles\Erp-it.xml" />
+    <EmbeddedResource Remove="Localization\SourceFiles\Erp-ja.xml" />
+    <EmbeddedResource Remove="Localization\SourceFiles\Erp-nl.xml" />
+    <EmbeddedResource Remove="Localization\SourceFiles\Erp-zh-Hans.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Localization\SourceFiles\Erp-fa.xml" />
+    <None Remove="Localization\SourceFiles\Erp-fr.xml" />
+    <None Remove="Localization\SourceFiles\Erp-it.xml" />
+    <None Remove="Localization\SourceFiles\Erp-ja.xml" />
+    <None Remove="Localization\SourceFiles\Erp-nl.xml" />
+    <None Remove="Localization\SourceFiles\Erp-zh-Hans.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Abp.AutoMapper" Version="9.0.0" />
     <PackageReference Include="Abp.ZeroCore.EntityFrameworkCore" Version="9.0.0" />
     <PackageReference Include="Castle.Windsor.MsDependencyInjection" Version="4.1.0" />
