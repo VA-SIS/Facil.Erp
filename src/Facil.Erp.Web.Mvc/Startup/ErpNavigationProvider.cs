@@ -13,14 +13,7 @@ namespace Facil.Erp.Web.Startup
         public override void SetNavigation(INavigationProviderContext context)
         {
             context.Manager.MainMenu
-                .AddItem(
-                    new MenuItemDefinition(
-                        PageNames.About,
-                        L("About"),
-                        url: "About",
-                        icon: "fas fa-info-circle"
-                    )
-                )
+               
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.Home,
@@ -56,81 +49,50 @@ namespace Facil.Erp.Web.Startup
                 )
                 .AddItem( // Menu items below is just for demonstration!
                     new MenuItemDefinition(
-                        "MultiLevelMenu",
-                        L("MultiLevelMenu"),
+                        "OperacaoMenu",
+                        new FixedLocalizableString("Operações"),
                         icon: "fas fa-circle"
-                    ).AddItem(
+                    )
+                    
+                    .AddItem(
                         new MenuItemDefinition(
-                            "AspNetBoilerplate",
-                            new FixedLocalizableString("ASP.NET Boilerplate"),
+                            "Cadastro",
+                            new FixedLocalizableString("Cadastro"),
                             icon: "far fa-circle"
                         ).AddItem(
                             new MenuItemDefinition(
-                                "AspNetBoilerplateHome",
-                                new FixedLocalizableString("Home"),
-                                url: "https://aspnetboilerplate.com?ref=abptmpl",
+                                "Pessoas",
+                                new FixedLocalizableString("Pessoas"),
+                                url: "Pessoas",
                                 icon: "far fa-dot-circle"
                             )
                         ).AddItem(
                             new MenuItemDefinition(
-                                "AspNetBoilerplateTemplates",
-                                new FixedLocalizableString("Templates"),
-                                url: "https://aspnetboilerplate.com/Templates?ref=abptmpl",
-                                icon: "far fa-dot-circle"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateSamples",
-                                new FixedLocalizableString("Samples"),
-                                url: "https://aspnetboilerplate.com/Samples?ref=abptmpl",
-                                icon: "far fa-dot-circle"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateDocuments",
-                                new FixedLocalizableString("Documents"),
-                                url: "https://aspnetboilerplate.com/Pages/Documents?ref=abptmpl",
+                                "Servicos",
+                                new FixedLocalizableString("Serviços"),
+                                url: "Servicos",
                                 icon: "far fa-dot-circle"
                             )
                         )
-                    ).AddItem(
+                    )
+                    
+                    .AddItem(
                         new MenuItemDefinition(
-                            "AspNetZero",
-                            new FixedLocalizableString("ASP.NET Zero"),
+                            "Agendamento",
+                            new FixedLocalizableString("Agendamento"),
                             icon: "far fa-circle"
                         ).AddItem(
                             new MenuItemDefinition(
-                                "AspNetZeroHome",
-                                new FixedLocalizableString("Home"),
-                                url: "https://aspnetzero.com?ref=abptmpl",
+                                "Atividades",
+                                new FixedLocalizableString("Atividades"),
+                                url: "Ativdades",
                                 icon: "far fa-dot-circle"
                             )
                         ).AddItem(
                             new MenuItemDefinition(
-                                "AspNetZeroFeatures",
-                                new FixedLocalizableString("Features"),
-                                url: "https://aspnetzero.com/Features?ref=abptmpl",
-                                icon: "far fa-dot-circle"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroPricing",
-                                new FixedLocalizableString("Pricing"),
-                                url: "https://aspnetzero.com/Pricing?ref=abptmpl#pricing",
-                                icon: "far fa-dot-circle"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroFaq",
-                                new FixedLocalizableString("Faq"),
-                                url: "https://aspnetzero.com/Faq?ref=abptmpl",
-                                icon: "far fa-dot-circle"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroDocuments",
-                                new FixedLocalizableString("Documents"),
-                                url: "https://aspnetzero.com/Documents?ref=abptmpl",
+                                "Agenda",
+                                new FixedLocalizableString("Agenda"),
+                                url: "Agenda",
                                 icon: "far fa-dot-circle"
                             )
                         )
