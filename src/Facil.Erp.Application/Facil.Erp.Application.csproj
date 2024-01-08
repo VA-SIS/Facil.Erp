@@ -14,7 +14,4 @@
   <ItemGroup>
     <ProjectReference Include="..\Facil.Erp.Core\Facil.Erp.Core.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Tarefas\" />
-  </ItemGroup>
 </Project>
