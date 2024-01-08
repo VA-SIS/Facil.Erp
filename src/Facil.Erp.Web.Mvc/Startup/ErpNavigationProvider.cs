@@ -65,6 +65,7 @@ namespace Facil.Erp.Web.Startup
                                 new FixedLocalizableString("Pessoas"),
                                 url: "Pessoas",
                                 icon: "far fa-dot-circle"
+                                 //permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Pessoas)
                             )
                         ).AddItem(
                             new MenuItemDefinition(
@@ -72,6 +73,7 @@ namespace Facil.Erp.Web.Startup
                                 new FixedLocalizableString("Serviços"),
                                 url: "Servicos",
                                 icon: "far fa-dot-circle"
+                                  //permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Servicos)
                             )
                         )
                     )
