@@ -61,7 +61,7 @@ namespace Facil.Erp.Web.Startup
                         PageNames.People,
                         new FixedLocalizableString("People"),
                         url: "People",
-                        icon: "fa-solid fa-users"
+                        icon: "fas fa-users"
                     //permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Tasks)
                     )
                 )
