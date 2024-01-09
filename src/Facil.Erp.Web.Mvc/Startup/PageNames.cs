@@ -8,5 +8,8 @@
         public const string Users = "Users";
         public const string Roles = "Roles";
         public const string Tasks = "Tasks";
+        public const string People = "People";
+
+        public const string TaskList = "TaskList";
     }
 }

@@ -47,6 +47,25 @@ namespace Facil.Erp.Web.Startup
                         permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Roles)
                     )
                 )
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Tasks,
+                        new FixedLocalizableString("Tasks"),
+                        url: "Tasks",
+                        icon: "fas fa-calendar-check"
+                        //permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Tasks)
+                    )
+                )
+                  .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.People,
+                        new FixedLocalizableString("People"),
+                        url: "People",
+                        icon: "fa-solid fa-users"
+                    //permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Tasks)
+                    )
+                )
+
                 .AddItem( // Menu items below is just for demonstration!
                     new MenuItemDefinition(
                         "OperacaoMenu",
@@ -63,7 +82,7 @@ namespace Facil.Erp.Web.Startup
                             new MenuItemDefinition(
                                 "Pessoas",
                                 new FixedLocalizableString("Pessoas"),
-                                url: "Pessoas",
+                                url: "People",
                                 icon: "far fa-dot-circle"
                                  //permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Pessoas)
                             )
@@ -87,7 +106,7 @@ namespace Facil.Erp.Web.Startup
                             new MenuItemDefinition(
                                 "Atividades",
                                 new FixedLocalizableString("Atividades"),
-                                url: "Ativdades",
+                                url: "Tasks",
                                 icon: "far fa-dot-circle"
                             )
                         ).AddItem(
