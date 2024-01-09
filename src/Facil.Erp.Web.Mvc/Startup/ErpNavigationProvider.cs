@@ -35,7 +35,7 @@ namespace Facil.Erp.Web.Startup
                         PageNames.Users,
                         L("Users"),
                         url: "Users",
-                        icon: "fas fa-users",
+                        icon: "fa-solid fa-user",
                         permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Users)
                     )
                 ).AddItem(
