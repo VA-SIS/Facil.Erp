@@ -47,24 +47,7 @@ namespace Facil.Erp.Web.Startup
                         permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Roles)
                     )
                 )
-                .AddItem(
-                    new MenuItemDefinition(
-                        PageNames.Tasks,
-                        new FixedLocalizableString("Tasks"),
-                        url: "Tasks",
-                        icon: "fas fa-calendar-check"
-                        //permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Tasks)
-                    )
-                )
-                  .AddItem(
-                    new MenuItemDefinition(
-                        PageNames.People,
-                        new FixedLocalizableString("People"),
-                        url: "People",
-                        icon: "fas fa-users"
-                    //permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Tasks)
-                    )
-                )
+               
 
                 .AddItem( // Menu items below is just for demonstration!
                     new MenuItemDefinition(
@@ -82,9 +65,9 @@ namespace Facil.Erp.Web.Startup
                             new MenuItemDefinition(
                                 "Pessoas",
                                 new FixedLocalizableString("Pessoas"),
-                                url: "People",
-                                icon: "far fa-dot-circle"
-                                 //permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Pessoas)
+                                url: "Pessoas",
+                                icon: "fa-solid fa-user"
+                            //permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Pessoas)
                             )
                         ).AddItem(
                             new MenuItemDefinition(

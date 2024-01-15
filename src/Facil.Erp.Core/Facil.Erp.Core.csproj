@@ -15,6 +15,11 @@
     <EmbeddedResource Include="Localization\SourceFiles\*.xml" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Remove="Pessoas\**" />
+    <EmbeddedResource Remove="Pessoas\**" />
+    <None Remove="Pessoas\**" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Remove="Localization\SourceFiles\Erp-fa.xml" />
     <EmbeddedResource Remove="Localization\SourceFiles\Erp-fr.xml" />
     <EmbeddedResource Remove="Localization\SourceFiles\Erp-it.xml" />
