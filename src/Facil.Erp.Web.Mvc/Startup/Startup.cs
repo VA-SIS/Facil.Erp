@@ -21,6 +21,7 @@ using Abp.Json;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.WebEncoders;
 using Newtonsoft.Json.Serialization;
+using Facil.Erp.Pessoas;
 
 
 namespace Facil.Erp.Web.Startup
@@ -64,6 +65,8 @@ namespace Facil.Erp.Web.Startup
             });
             
             services.AddScoped<IWebResourceManager, WebResourceManager>();
+
+          
 
             services.AddSignalR();
 
