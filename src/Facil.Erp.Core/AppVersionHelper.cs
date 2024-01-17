@@ -13,7 +13,7 @@ namespace Facil.Erp
         /// Gets current version of the application.
         /// It's also shown in the web page.
         /// </summary>
-        public const string Version = "1.0.0.13";
+        public const string Version = "1.0.0.14";
 
         /// <summary>
         /// Gets release (last build) date of the application.
@@ -21,7 +21,7 @@ namespace Facil.Erp
         /// </summary>
         public static DateTime ReleaseDate => LzyReleaseDate.Value;
 
-        public static String DataVersao => "16/01/2024 12:00 MS";
+        public static String DataVersao => "17/01/2024 12:00 MS";
 
         private static readonly Lazy<DateTime> LzyReleaseDate = new Lazy<DateTime>(() => new FileInfo(typeof(AppVersionHelper).GetAssembly().Location).LastWriteTime);
     }

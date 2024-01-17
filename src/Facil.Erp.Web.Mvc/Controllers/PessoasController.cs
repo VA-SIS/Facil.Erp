@@ -1,6 +1,5 @@
 ﻿using Abp.AspNetCore.Mvc.Authorization;
 using Facil.Erp.Controllers;
-using Facil.Erp.MultiTenancy;
 using Facil.Erp.Pessoas;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,10 +10,10 @@ public class PessoasController : ErpControllerBase
 {
     private readonly IPessoaAppService _AppService;
 
-    //public PessoasController(IPessoaAppService appService)
-    //{
-    //    _AppService = appService;
-    //}
+    public PessoasController(IPessoaAppService appService)
+    {
+        _AppService = appService;
+    }
 
     public IActionResult Index()
     {

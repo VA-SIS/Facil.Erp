@@ -89,7 +89,7 @@ namespace Facil.Erp.Web.Startup
                             new MenuItemDefinition(
                                 "Atividades",
                                 new FixedLocalizableString("Atividades"),
-                                url: "Tasks",
+                                url: "Tarefas",
                                 icon: "far fa-dot-circle"
                             )
                         ).AddItem(

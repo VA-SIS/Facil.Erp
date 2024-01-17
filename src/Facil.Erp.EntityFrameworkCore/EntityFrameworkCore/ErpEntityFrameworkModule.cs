@@ -37,6 +37,8 @@ namespace Facil.Erp.EntityFrameworkCore
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(typeof(ErpEntityFrameworkModule).GetAssembly());
+
+          
         }
 
         public override void PostInitialize()

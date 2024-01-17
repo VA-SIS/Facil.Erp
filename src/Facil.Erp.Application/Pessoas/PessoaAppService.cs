@@ -1,6 +1,9 @@
 ﻿namespace Facil.Erp.Pessoas;
 
-public class PessoaAppService
+/// <summary>
+/// 
+/// </summary>
+public class PessoaAppService : ErpAppServiceBase, IPessoaAppService
 {
 
 }
