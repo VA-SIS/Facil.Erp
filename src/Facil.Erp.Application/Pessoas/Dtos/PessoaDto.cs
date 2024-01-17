@@ -8,7 +8,7 @@ using System;
 namespace Facil.Erp.Pessoas.Dtos;
 
 [AutoMapFrom(typeof(Pessoa))]
-public class PessoaDto : EntityDto
+public class PessoaDto : EntityDto<Guid>
 {
     //public Guid ID { get; set; }
 
