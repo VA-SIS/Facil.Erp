@@ -3,17 +3,17 @@
 @{
     Layout = null;
 }
-<div class="modal fade" id="RoleCreateModal" tabindex="-1" role="dialog" aria-labelledby="RoleCreateModalLabel" data-backdrop="static">
+<div class="modal fade" id="PessoaCreateModal" tabindex="-1" role="dialog" aria-labelledby="PessoaCreateModalLabel" data-backdrop="static">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            @await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("CreateNewRole")))
+            @await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel("Nova Pessoa"))
             <form name="pessoaCreateForm" role="form" class="form-horizontal">
                 <div class="modal-body">
 
                     <div class="form-group row required">
                         <label class="col-md-3 col-form-label" for="nome">Nome</label>
                         <div class="col-md-9">
-                            <input id="rolename" type="text" name="Name" class="form-control" required maxlength="32" minlength="2">
+                            <input id="pessoaNome" type="text" name="nome" class="form-control" required maxlength="32" minlength="2">
                         </div>
                     </div>
 

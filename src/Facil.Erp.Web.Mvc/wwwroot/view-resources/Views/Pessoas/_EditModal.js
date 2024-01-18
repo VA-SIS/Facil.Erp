@@ -1,7 +1,7 @@
 ﻿(function ($) {
-    var _roleService = abp.services.app.role,
+    var _roleService = abp.services.app.pessoa,
         l = abp.localization.getSource('Erp'),
-        _$modal = $('#RoleEditModal'),
+        _$modal = $('#PessoaEditModal'),
         _$form = _$modal.find('form');
 
     function save() {
@@ -9,21 +9,21 @@
             return;
         }
 
-        var role = _$form.serializeFormToObject();
-        role.grantedPermissions = [];
-        var _$permissionCheckboxes = _$form[0].querySelectorAll("input[name='permission']:checked");
-        if (_$permissionCheckboxes) {
-            for (var permissionIndex = 0; permissionIndex < _$permissionCheckboxes.length; permissionIndex++) {
-                var _$permissionCheckbox = $(_$permissionCheckboxes[permissionIndex]);
-                role.grantedPermissions.push(_$permissionCheckbox.val());
-            }
-        }
+        var pessoa = _$form.serializeFormToObject();
+        //role.grantedPermissions = [];
+        //var _$permissionCheckboxes = _$form[0].querySelectorAll("input[name='permission']:checked");
+        //if (_$permissionCheckboxes) {
+        //    for (var permissionIndex = 0; permissionIndex < _$permissionCheckboxes.length; permissionIndex++) {
+        //        var _$permissionCheckbox = $(_$permissionCheckboxes[permissionIndex]);
+        //        role.grantedPermissions.push(_$permissionCheckbox.val());
+        //    }
+        //}
 
         abp.ui.setBusy(_$form);
-        _roleService.update(role).done(function () {
+        _pessoaService.update(pessoa).done(function () {
             _$modal.modal('hide');
             abp.notify.info(l('SavedSuccessfully'));
-            abp.event.trigger('role.edited', role);
+            abp.event.trigger('pessoa.edited', pessoa);
         }).always(function () {
             abp.ui.clearBusy(_$form);
         });

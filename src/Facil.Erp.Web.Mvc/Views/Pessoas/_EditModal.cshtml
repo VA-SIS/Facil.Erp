@@ -4,7 +4,7 @@
 @{
     Layout = null;
 }
-@await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditRole")))
+@await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel("Alterar Pessoa"))
 <form name="RoleEditForm" role="form" class="form-horizontal">
 
     <input type="hidden" name="Id" value="@Model.Pessoa.Id" />
@@ -16,7 +16,7 @@
         <div class="form-group row required">
             <label class="col-md-3 col-form-label" for="nome">Nome</label>
             <div class="col-md-9">
-                <input id="displayname" type="text" class="form-control" name="DisplayName" value="@Model.Pessoa.Nome" required maxlength="32" minlength="2">
+                <input id="Nome" type="text" class="form-control" name="Nome" value="@Model.Pessoa.Nome" required maxlength="32" minlength="2">
             </div>
         </div> 
 
