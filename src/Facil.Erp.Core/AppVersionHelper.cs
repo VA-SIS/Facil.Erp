@@ -21,7 +21,7 @@ namespace Facil.Erp
         /// </summary>
         public static DateTime ReleaseDate => LzyReleaseDate.Value;
 
-        public static String DataVersao => "18/01/2024 15:00 MS";
+        public static String DataVersao => "18/01/2024 17:30 MS";
 
         private static readonly Lazy<DateTime> LzyReleaseDate = new Lazy<DateTime>(() => new FileInfo(typeof(AppVersionHelper).GetAssembly().Location).LastWriteTime);
     }
