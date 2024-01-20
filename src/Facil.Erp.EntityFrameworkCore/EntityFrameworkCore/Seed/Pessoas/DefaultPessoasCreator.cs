@@ -3,8 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Abp.Application.Editions;
 using Abp.Application.Features;
 using Facil.Erp.Editions;
-using System;
-using Facil.Erp.EntityFrameworkCore.Entities;
 
 namespace Facil.Erp.EntityFrameworkCore.Seed.Host
 {
@@ -24,8 +22,8 @@ namespace Facil.Erp.EntityFrameworkCore.Seed.Host
 
         private void CreatePessoas()
         {
-            var pessoa = new Pessoa("Donisetti","donisetti@msn.com");
-            _context.Pessoas.Add(pessoa);
+            //var pessoa = new Pessoa("Donisetti","donisetti@msn.com");
+            //_context.Pessoas.Add(pessoa);
             _context.SaveChanges();
 
         }
