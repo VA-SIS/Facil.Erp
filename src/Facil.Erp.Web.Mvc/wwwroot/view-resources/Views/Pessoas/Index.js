@@ -1,15 +1,17 @@
 ﻿(function ($) {
-    var _pessoaService = abp.services.app.role,
+    var _pessoaService = abp.services.app.pessoa,
         l = abp.localization.getSource('Erp'),
         _$modal = $('#PessoaCreateModal'),
         _$form = _$modal.find('form'),
         _$table = $('#PessoaTable');
 
-    var _$rolesTable = _$table.DataTable({
+    var _$pessoasTable = _$table.DataTable({
         paging: true,
         serverSide: true,
         listAction: {
             ajaxFunction: _pessoaService.getAll,
+
+            console.log(ajaxFunction);
             inputFilter: function () {
                 return $('#PessoaSearchForm').serializeFormToObject(true);
             }
@@ -18,7 +20,7 @@
             {
                 name: 'refresh',
                 text: '<i class="fas fa-redo-alt"></i>',
-                action: () => _$pessoaTable.draw(false)
+                action: () => _$pessoasTable.draw(false)
             }
         ],
         responsive: {
